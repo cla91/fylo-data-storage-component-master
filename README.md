@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/first-time-progress-bar-only-with-css-B1HtqUFSc)
+- Live Site URL: [Add live site URL here](https://cla91.github.io/fylo-data-storage-component-master/)
 
 ## My process
 
