@@ -1,0 +1,217 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html {
+  font-size: 62.5%; /* 10px */
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4rem;
+  color: hsl(243, 100%, 93%);
+}
+.page {
+  background: url("../images/bg-mobile.png") no-repeat bottom left;
+  background-size: cover;
+  background-color: hsl(229, 57%, 11%);
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr auto;
+  grid-template-rows: 1fr auto;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.page > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.page > *:nth-child(2) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+main {
+  margin-inline: 2.4rem;
+}
+.data-storage {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1.6rem;
+  max-width: 920px;
+  margin: auto;
+}
+.header {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 3.2rem;
+  padding: 4rem;
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 10px;
+  border-top-right-radius: 100px;
+}
+.icons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.6rem;
+}
+.icons-container a {
+  display: block;
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background-color: hsl(229, 57%, 11%);
+  display: -ms-grid;
+  display: grid;
+}
+.icons-container img {
+  margin: auto;
+}
+.storage {
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 10px;
+  padding: 3.2rem 3.2rem 5rem;
+  text-align: center;
+  position: relative;
+}
+.bold {
+  font-weight: 700;
+}
+.bar {
+  overflow: hidden;
+  margin-top: 1.6rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  height: 20px;
+  padding: 2px;
+  background-color: hsl(229, 57%, 11%);
+  width: 100%;
+}
+.gradient {
+  border-radius: 10px;
+  padding: 2px;
+  height: 100%;
+  width: 81.5%;
+  background-image: -webkit-gradient(linear, left top, right top, from(hsl(6, 100%, 80%)), to(hsl(335, 100%, 65%)));
+  background-image: -o-linear-gradient(left, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  overflow: hidden;
+}
+.circle {
+  border-radius: 100%;
+  height: 100%;
+  width: 12px;
+  float: right;
+  background-color: hsl(360, 100%, 100%);
+}
+.progress-bar {
+  overflow: hidden;
+}
+.progress-bar p {
+  float: left;
+  text-align: left;
+}
+.progress-bar p:last-child {
+  float: right;
+}
+.offset {
+  position: absolute;
+  bottom: -35px;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+          transform: translateX(50%);
+  text-transform: uppercase;
+  color: hsl(229, 7%, 55%);
+  background-color: hsl(360, 100%, 100%);
+  border-radius: 10px;
+  text-align: center;
+  width: 180px;
+  height: 70px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.offset p {
+  margin: auto;
+}
+.xl {
+  font-size: 4rem;
+  color: hsl(229, 57%, 11%);
+  vertical-align: middle;
+}
+.triangle {
+  display: none;
+}
+
+@media only screen and (min-width: 376px) {
+  .page {
+    background: url("../images/bg-desktop.png") no-repeat bottom left;
+    background-color: hsl(229, 57%, 11%);
+  }
+}
+@media only screen and (min-width: 600px) {
+  main {
+    margin-inline: 1rem;
+  }
+  .data-storage {
+    -ms-grid-columns: minmax(250px, 350px) 3rem minmax(293px, 1fr);
+    grid-template-columns: minmax(250px, 350px) minmax(293px, 1fr);
+    grid-gap: 3rem;
+  }
+  .storage {
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .storage {
+    text-align: left;
+    padding: 4rem;
+  }
+  .offset {
+    top: -46px;
+    right: 4rem;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+    border-bottom-right-radius: 0px;
+  }
+  .triangle {
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 11px solid hsl(360, 100%, 100%);
+    border-right: 11px solid hsl(360, 100%, 100%);
+    border-left: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+    position: absolute;
+    top: 100%;
+    right: 0;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .page {
+    background-size: contain;
+  }
+}
